@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title> user defined variable  </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+
+
+</head>
+
+<script>
+
+
+    function multiplyBy()
+    {
+            var_name = document.getElementById("firstNumber").value;
+            var n = document.getElementById("secondNumber").value;
+            this[var_name] = n;
+            //alert(this[var_name]);
+            document.getElementById("r1").innerHTML = var_name;
+            document.getElementById("r").innerHTML = this[var_name];
+           
+
+           
+    
+    }
+    </script>
+
+<body>
+
+    
+    
+        Enter the variable name  : <input type="text" id="firstNumber" /><br>
+        Enter the value : <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Display" /><br>
+        <span id = "r1"></span>
+        <span id = "r"></span>
+ 
+
+
+</body>
+
+</html>

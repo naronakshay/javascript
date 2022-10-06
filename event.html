@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h1 onclick="this.innerHTML = 'CHANGED'">
+    unchanged</h1>
+
+    <button id="myBtn">VIEW DATE</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+</body>
+
+</html>

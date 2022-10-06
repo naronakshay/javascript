@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<script>
+
+
+function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        
+        document.getElementById("result").innerHTML = (num1*1.8) + 32;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        cel=(num1-32)
+document.getElementById("result").innerHTML = cel*5/9;;
+}
+
+</script>
+
+
+<body>
+<form>
+ENTER TEMPERATURE  : <input type="text" id="firstNumber" /><br>
+
+<input type="button" onClick="multiplyBy()" Value="TO FAHRENHEIT" />
+<input type="button" onClick="divideBy()" Value="TO CELSIUS" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
+</html>
